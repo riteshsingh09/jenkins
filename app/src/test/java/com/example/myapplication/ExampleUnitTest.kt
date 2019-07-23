@@ -28,6 +28,6 @@ class ExampleUnitTest {
 
     @Test
     fun passwordValidator() {
-        assertEquals(true,SplashActivity.isValidPassword(""))
+        assertEquals(false,SplashActivity.isValidPassword(""))
     }
 }
