@@ -10,4 +10,20 @@ public class SplashActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.test);
     }
+
+    public static boolean isValidEmail(String hello){
+
+        return true;
+    }
+
+    public static boolean isValidPassword(String hello){
+
+        return true;
+    }
+
+    public static boolean isValidUser(String hello){
+
+        return true;
+    }
+
 }

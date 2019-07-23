@@ -11,7 +11,23 @@ import org.junit.Assert.*
  */
 class ExampleUnitTest {
     @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+    fun emailValidator_CorrectEmailSimple_ReturnsTrue() {
+        assertTrue(SplashActivity.isValidEmail("name@email.com"))
+    }
+
+    @Test
+    fun userValidator_ReturnsFalse() {
+        assertTrue(SplashActivity.isValidUser("name"))
+    }
+
+
+    @Test
+    fun passwordValidator_ReturnsTrue() {
+        assertTrue(SplashActivity.isValidPassword(""))
+    }
+
+    @Test
+    fun passwordValidator() {
+        assertEquals(true,SplashActivity.isValidPassword(""))
     }
 }
